@@ -260,7 +260,7 @@ class Channel(Playlist):
             # Extract id from short videos
             for x in videos:
                 videos_url.append(f"/watch?v="
-                                  f"{x['richItemRenderer']['content']['reelItemRenderer']['videoId']}")
+                                  f"{x['richItemRenderer']['content']['shortsLockupViewModel']['onTap']['innertubeCommand']['reelWatchEndpoint']['videoId']}")
 
         # remove duplicates
         return uniqueify(videos_url), continuation
